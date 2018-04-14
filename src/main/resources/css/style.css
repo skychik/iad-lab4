@@ -1,0 +1,174 @@
+/** Add css rules here for your application. */
+
+
+/** Example rules used by the template application (remove for your app) */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #777777;
+    text-align: center;
+}
+
+.sendButton {
+    display: block;
+    font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+    width: 400px;
+}
+
+.dialogVPanel {
+    margin: 5px;
+}
+
+.serverResponseLabelError {
+    color: red;
+}
+
+.header {
+    background-color: #fff;
+    text-align: center;
+}
+
+.gwt-TextBox, .gwt-PasswordTextBox {
+    padding: 5px !important;
+    border-radius: 3px;
+    box-shadow: none;
+    margin-left: 10px;
+    border: solid 1px gray;
+}
+
+.gwt-TextBox:focus, .gwt-PasswordTextBox:focus {
+    border-color: rgba(73,155,207,0.87);
+}
+
+.gwt-Button {
+    background: transparent !important;
+    border: solid 1px gray !important;
+    padding: 5px 10px !important;
+    border-radius: 3px;
+    margin: 5px !important;
+}
+
+.gwt-Button:hover {
+    border-color: rgba(73,155,207,0.87) !important;
+}
+
+.dialogTop .Caption {
+    background: #fff !important;
+    border-top: none !important;
+}
+
+.dialogTopRight, .dialogTopLeft, .dialogMiddleRight, .dialogMiddleLeft, .dialogBottomRight, .dialogBottomLeft {
+    display: none !important;
+}
+
+.dialogTopCenter, .dialogMiddleCenter, .dialogBottomCenter {
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+.dialogTopCenter {
+    border-top: 1px solid gray;
+}
+
+.dialogBottomCenter {
+    border-bottom: solid 1px gray;
+}
+
+.gwt-Label {
+    font-weight: bold;
+}
+
+.image-panel .gwt-Button {
+    display: block;
+}
+
+.image-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-panel, .selectors-panel, .table-panel {
+    margin: 0 15px;
+}
+
+.table-panel {
+    max-width: 250px;
+    max-height: 500px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+.style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+th {
+    text-shadow: none !important;
+}
+
+.img_wrapper {
+    position: relative;
+    width: 230px;
+    height: 230px;
+}
+
+.img_point {
+    z-index: 100;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.img_point[hits="true"] {
+    background-color: green;
+}
+
+.img_point:hover {
+    z-index: 100;
+    background-color: red;
+}
+
+.ww {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 835px) {
+    .table-panel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .image-panel, .selectors-panel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
